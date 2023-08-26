@@ -19,11 +19,6 @@ export let renderFood = (data) => {
   let contentHTML = "";
   data.reverse().forEach((el) => {
     let { id, name, price, type, sale, state, desc, imgSrc } = el;
-    console.log("================");
-    console.log(price);
-    console.log(sale);
-    console.log(price * (1 - sale));
-    console.log("================");
 
     let contentTr = /*html*/ `
         <tr>
